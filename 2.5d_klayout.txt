@@ -1,0 +1,36 @@
+# Vista 2.5D del layout abierto.
+# Alturas ilustrativas en um, NO espesores oficiales del proceso.
+# Colores heredados de las capas del layout.
+# Pozos: espesor y profundidad solo ilustrativos.
+# --- Difusiones dentro del DNWELL ---
+z(input(12, 0),  zstart: -0.04, zstop: -0.03, name: "DNWELL", like: "12/0")
+
+# Nplus y Pplus ocupan el mismo espacio físico que DNWELL
+z(input(32, 0),  zstart: -0.01, zstop: 0, name: "Nplus", like: "32/0")
+z(input(31, 0),  zstart: -0.01, zstop: 0, name: "Pplus", like: "31/0")
+
+z(input(21, 0),  zstart: -0.02, zstop: -0.01, name: "Nwell", like: "21/0")
+z(input(204, 0), zstart: -0.03, zstop: -0.02, name: "LVPWELL", like: "204/0")
+
+# --- Intercambio de Poly y COMP ---
+z(input(30, 0), zstart: 0, zstop: 0.10, name: "Poly")   
+z(input(22, 0), zstart: 0, zstop: 0.05, name: "COMP")    
+
+# --- Contactos y metales ---
+z(input(33, 0), zstart: 0.00, zstop: 0.40, name: "Contact")   
+z(input(34, 0), zstart: 0.40, zstop: 0.60, name: "Metal1")    
+
+z(input(35, 0), zstart: 0.60, zstop: 0.90, name: "Via1")      
+z(input(36, 0), zstart: 0.90, zstop: 1.10, name: "Metal2")    
+
+z(input(38, 0), zstart: 1.10, zstop: 1.40, name: "Via2")      
+z(input(42, 0), zstart: 1.40, zstop: 1.60, name: "Metal3")   
+
+z(input(40, 0), zstart: 1.60, zstop: 1.90, name: "Via3")      
+z(input(46, 0), zstart: 1.90, zstop: 2.10, name: "Metal4")    
+
+z(input(41, 0), zstart: 2.10, zstop: 2.30, name: "Via4")     
+z(input(81, 0), zstart: 2.30, zstop: 2.50, name: "Metal5")   
+
+z(input(82, 0), zstart: 2.50, zstop: 2.70, name: "Via5")     
+z(input(53, 0), zstart: 2.70, zstop: 3.30, name: "MetalTop")

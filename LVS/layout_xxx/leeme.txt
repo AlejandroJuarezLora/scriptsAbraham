@@ -1,0 +1,6 @@
+Aquí va el archivo .gds generado por magic/klayout y el archivo .spice generado pos xschem
+
+Deben tener el mismo nombre y debe coincidir con el nombre de la carpeta contenedora
+
+La celda del archivo .gds debe tener el mismo nombre que el nombre del archivo.gds
+

@@ -1,0 +1,7 @@
+estos archivos son indispensables y dentro de la carpeta deben estar layout_xxx deben estar los archivos .gds y el archivo .spice
+
+para empezar el flujo debe ponerse en terminal
+./run_lvs.sh layout_xxx
+
+si el archivo .sh no funciona poner en terminal
+chmod +x run_lvs.sh
