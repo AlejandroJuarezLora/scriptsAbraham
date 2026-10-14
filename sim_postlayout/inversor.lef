@@ -1,0 +1,50 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO inversor
+  CLASS BLOCK ;
+  FOREIGN inversor ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 6.305 BY 7.910 ;
+  PIN vdd
+    ANTENNADIFFAREA 0.690000 ;
+    PORT
+      LAYER Nwell ;
+        RECT 2.345 3.880 5.205 7.910 ;
+      LAYER Metal1 ;
+        RECT 0.000 6.630 6.305 7.910 ;
+        RECT 3.775 5.900 4.155 6.630 ;
+    END
+  END vdd
+  PIN gnd
+    ANTENNADIFFAREA 0.660000 ;
+    PORT
+      LAYER Metal1 ;
+        RECT 3.775 1.280 4.155 1.990 ;
+        RECT 0.000 0.000 6.305 1.280 ;
+    END
+  END gnd
+  PIN A
+    ANTENNAGATEAREA 0.280000 ;
+    PORT
+      LAYER Metal1 ;
+        RECT 1.540 5.340 3.415 5.720 ;
+        RECT 1.540 4.110 1.920 5.340 ;
+        RECT 0.000 3.730 1.920 4.110 ;
+        RECT 1.540 2.530 1.920 3.730 ;
+        RECT 1.540 2.150 3.425 2.530 ;
+    END
+  END A
+  PIN B
+    ANTENNADIFFAREA 0.630000 ;
+    PORT
+      LAYER Metal1 ;
+        RECT 3.775 4.070 4.155 5.160 ;
+        RECT 3.775 3.690 6.305 4.070 ;
+        RECT 3.775 2.690 4.155 3.690 ;
+    END
+  END B
+END inversor
+END LIBRARY
+

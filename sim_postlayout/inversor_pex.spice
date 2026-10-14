@@ -1,0 +1,12 @@
+* NGSPICE file created from inversor.ext - technology: gf180mcuD
+
+.subckt inversor_simbolo_pex vdd gnd A B
+X0 vdd A B vdd pfet_03v3 ad=0.69p pd=3.76u as=0.325p ps=2.3u w=0.5u l=0.28u
+X1 B A gnd gnd nfet_03v3 ad=0.305p pd=2.22u as=0.66p ps=3.64u w=0.5u l=0.28u
+C0 B A 0.03852f
+C1 A vdd 0.29033f
+C2 B vdd 0.1087f
+C3 B gnd 0.5888f
+C4 vdd gnd 2.30783f
+.ends
+

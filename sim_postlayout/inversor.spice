@@ -1,0 +1,15 @@
+* NGSPICE file created from inversor.ext - technology: gf180mcuD
+
+.subckt pfet a_28_160# a_n92_0# w_n264_n198#
+X0 w_n264_n198# a_28_160# a_n92_0# w_n264_n198# pfet_03v3 ad=0.69p pd=3.76u as=0.325p ps=2.3u w=0.5u l=0.28u
+.ends
+
+.subckt nfet a_30_n132# a_n84_0# a_94_0#
+X0 a_94_0# a_30_n132# a_n84_0# a_94_0# nfet_03v3 ad=0.66p pd=3.64u as=0.305p ps=2.22u w=0.5u l=0.28u
+.ends
+
+.subckt inversor vdd gnd A B
+Xpfet_0 A B vdd pfet
+Xnfet_0 A B gnd nfet
+.ends
+
